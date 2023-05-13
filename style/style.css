@@ -3,9 +3,103 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     width: 100vw;
     height: 100vh;
     background: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    background: #fcd000;
+    height: 10vh;
+    
+}
+.nav-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    
+}
+.logo {
+    width: 84px;
+    border-radius: 50%;
+    
+}
+.nav-list > ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item > a{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+.nav-item > a:hover{
+    background: #731a12;
+    color: #fff;
+    border-radius: 15px;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+.inicio {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50vh;
+    background-color: #333;
+    background: url(imagens/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+.link-inicio{
+    background: #fcd000;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.link-inicio:hover{
+    background-color: #731a12;
+    color: #fff;
+}
+article .titulo-voluntario {
+    text-align: center;
+    margin: auto;
+}
+.voluntario > h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-voluntario {
+    letter-spacing: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: #fcd000;
+}
+.titulo-voluntario::after {
+    content: "";
+    background-color: #fff;
+    height: 2px;
+    width: 10px;
+}
+.voluntario-imagem{
+    width: 250px;
+    height: 200px;
 }
